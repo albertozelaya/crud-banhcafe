@@ -1,6 +1,8 @@
-import { useState } from 'react'
+
 import './App.css'
 import {useSelector} from 'react-redux'
+import  {TaskForm}  from './components/TaskForm'
+import  {TaskList}  from './components/TaskList'
 
 function App() {
   
@@ -12,7 +14,13 @@ function App() {
 
   return (
     <>
-      <h1 className=" tracking-wide">Hola</h1>
+      <div className="App">
+        <h1>Hello world</h1>
+
+        <TaskForm/>
+        <TaskList/>
+      </div>
+      
     </>
   )
 }
