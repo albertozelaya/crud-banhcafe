@@ -1,10 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {useSelector} from 'react-redux'
 
 function App() {
   
+  const taskState = useSelector(state => state.tasks)
+
+  console.log(taskState)
+  
+
 
   return (
     <>
